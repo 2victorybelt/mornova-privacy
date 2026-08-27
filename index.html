@@ -3,82 +3,116 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>MORNOVA Privacy Policy</title>
-  <meta name="description" content="Privacy Policy for the MORNOVA Android app.">
+  <meta name="robots" content="index,follow">
+  <title>MORNOVA Privacy Policy | ODYSSEY WORKS</title>
+  <meta name="description" content="Privacy Policy for the MORNOVA Android app provided by ODYSSEY WORKS.">
   <style>
     :root {
-      color-scheme: light dark;
+      color-scheme: dark;
       --bg: #07101f;
       --card: #0d1a2d;
       --text: #eef4ff;
       --muted: #aebbd0;
       --line: #26364f;
       --accent: #f5a623;
-      --link: #86b7ff;
+      --link: #8fbdff;
+      --chip: #16263f;
     }
     * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
     body {
       margin: 0;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
       background: var(--bg);
       color: var(--text);
-      line-height: 1.68;
+      line-height: 1.7;
     }
     main {
-      max-width: 860px;
+      max-width: 900px;
       margin: 0 auto;
-      padding: 48px 20px 72px;
+      padding: 44px 18px 72px;
     }
-    .card {
+    .hero, .card {
       background: var(--card);
       border: 1px solid var(--line);
       border-radius: 18px;
-      padding: 28px;
-      margin-bottom: 20px;
+      padding: 26px;
+      margin-bottom: 18px;
     }
-    h1, h2, h3 { line-height: 1.28; }
-    h1 { margin-top: 0; font-size: 2rem; }
-    h2 { margin-top: 0; font-size: 1.35rem; }
-    h3 { font-size: 1.05rem; margin-bottom: 6px; }
-    p, li { color: var(--text); }
+    .brand {
+      color: var(--accent);
+      font-weight: 800;
+      letter-spacing: .08em;
+      font-size: .85rem;
+    }
+    h1, h2 { line-height: 1.3; }
+    h1 { font-size: clamp(1.9rem, 5vw, 2.5rem); margin: 8px 0 10px; }
+    h2 { font-size: 1.3rem; margin: 0 0 10px; }
+    p { margin: .55rem 0; }
+    ul { margin: .55rem 0; padding-left: 1.3rem; }
     .muted { color: var(--muted); }
-    .brand { color: var(--accent); font-weight: 700; letter-spacing: .04em; }
     a { color: var(--link); }
-    ul { padding-left: 1.25rem; }
-    hr { border: 0; border-top: 1px solid var(--line); margin: 36px 0; }
-    code {
-      background: rgba(255,255,255,.08);
-      padding: 2px 5px;
-      border-radius: 5px;
+    .nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 18px;
+    }
+    .nav a {
+      display: inline-block;
+      padding: 7px 11px;
+      border-radius: 999px;
+      background: var(--chip);
+      border: 1px solid var(--line);
+      text-decoration: none;
+      font-size: .92rem;
+    }
+    .divider {
+      height: 1px;
+      background: var(--line);
+      margin: 40px 0;
+    }
+    .small { font-size: .92rem; }
+    footer {
+      color: var(--muted);
+      text-align: center;
+      padding-top: 16px;
+      font-size: .9rem;
     }
   </style>
 </head>
 <body>
 <main>
-  <section class="card">
-    <div class="brand">MORNOVA</div>
+  <section class="hero">
+    <div class="brand">MORNOVA · ODYSSEY WORKS</div>
     <h1>Privacy Policy</h1>
     <p class="muted">Effective date: August 27, 2026 · Last updated: August 27, 2026</p>
     <p>
       This Privacy Policy explains how <strong>MORNOVA</strong> (the “App”), provided by
-      <strong>Odysseyworks</strong> (“we”, “us”, or “our”), handles information when you use the App.
-      If you have questions about this policy or privacy matters, contact
-      <a href="mailto:mornova.app@gmail.com">mornova.app@gmail.com</a>.
+      <strong>ODYSSEY WORKS</strong> (“we”, “us”, or “our”), handles information when you use the App.
     </p>
+    <p>
+      Privacy contact:
+      <a href="mailto:mornova.app@gmail.com">mornova.app@gmail.com</a>
+    </p>
+    <div class="nav">
+      <a href="#en">English</a>
+      <a href="#ko">한국어</a>
+    </div>
   </section>
+
+  <div id="en"></div>
 
   <section class="card">
     <h2>1. Information stored by MORNOVA</h2>
     <p>
-      MORNOVA is an alarm app. Information you enter for normal app operation—such as alarm times,
-      alarm names, repeat days, mission selections, difficulty choices, and snooze preferences—is
+      MORNOVA is an alarm app. Information you enter or create for normal app operation—such as alarm
+      times, alarm names, repeat days, mission selections, difficulty choices, and snooze preferences—is
       stored locally on your device.
     </p>
     <p>
-      MORNOVA does not require an account and does not operate its own server for uploading this
-      alarm data. If you place personal information in an alarm name, that information remains
-      part of the local alarm data on your device unless another service described below processes
-      separate device or advertising data.
+      MORNOVA does not currently require a user account and does not operate an ODYSSEY WORKS server
+      for uploading or remotely storing this alarm data.
     </p>
   </section>
 
@@ -86,19 +120,20 @@
     <h2>2. Advertising and third-party data processing</h2>
     <p>
       MORNOVA uses the <strong>Google Mobile Ads SDK (AdMob)</strong> to display advertising.
-      Google may automatically collect and process information such as:
+      According to Google's documentation, the Mobile Ads SDK may automatically collect and share data
+      such as:
     </p>
     <ul>
       <li>IP address, which may be used to estimate general location;</li>
-      <li>app and ad interactions, such as app launches, taps, and ad interactions;</li>
+      <li>app and advertising interactions, including app launches, taps, and ad interactions;</li>
       <li>diagnostic and performance information; and</li>
-      <li>device and account identifiers, including the Android advertising ID and app set ID where applicable.</li>
+      <li>device or account identifiers, including Android advertising ID and app set ID where applicable.</li>
     </ul>
     <p>
-      Google states that these types of data may be used for advertising, analytics, and fraud
-      prevention. Data handled by Google is subject to Google's own policies and terms.
+      Google states that these data may be used for advertising, analytics, and fraud prevention.
+      Data processed by Google is subject to Google's own policies and terms.
     </p>
-    <p>
+    <p class="small">
       Google Privacy Policy:
       <a href="https://policies.google.com/privacy" rel="noopener noreferrer">https://policies.google.com/privacy</a><br>
       Google advertising technologies:
@@ -109,135 +144,270 @@
   <section class="card">
     <h2>3. Consent and advertising choices</h2>
     <p>
-      Where required by applicable law, MORNOVA uses Google's consent-management tools to present
-      privacy choices before requesting ads. Depending on your region and choices, Google may serve
-      personalized, non-personalized, or limited ads.
+      Where required by applicable law or platform policy, MORNOVA uses Google's User Messaging Platform
+      (UMP) to request or manage advertising-related privacy choices before requesting ads.
     </p>
     <p>
-      You may also be able to reset or delete your Android advertising ID through your device's
-      Android privacy or advertising settings.
+      When Google makes a privacy-options entry point available for your region and consent state,
+      MORNOVA provides an in-app way to reopen those options.
+    </p>
+    <p>
+      You may also be able to reset or delete your Android advertising ID through Android privacy or
+      advertising settings.
     </p>
   </section>
 
   <section class="card">
     <h2>4. App permissions</h2>
-    <p>MORNOVA may request Android permissions that are necessary for alarm reliability, including:</p>
+    <p>MORNOVA may use Android permissions and system capabilities needed for reliable alarms, including:</p>
     <ul>
       <li>notification permission;</li>
       <li>exact alarm scheduling;</li>
       <li>full-screen alarm presentation;</li>
       <li>foreground service operation;</li>
-      <li>restart/boot completion handling; and</li>
+      <li>restart or boot-completion handling; and</li>
       <li>vibration.</li>
     </ul>
     <p>
-      The current Android version of MORNOVA does not request access to your contacts, camera,
-      microphone, or precise location for its core alarm functionality.
+      The current Android version of MORNOVA does not request access to contacts, camera, microphone,
+      or precise location for its core alarm functionality.
     </p>
   </section>
 
   <section class="card">
-    <h2>5. Sharing of information</h2>
+    <h2>5. Sharing and sale of information</h2>
     <p>
-      MORNOVA does not operate a user-account database and does not sell locally stored alarm data.
-      Information may be processed by Google in connection with AdMob as described above.
-      We may also disclose information if required by law or to protect legal rights, security,
-      or users.
+      ODYSSEY WORKS does not operate a user-account database for MORNOVA and does not sell locally stored
+      alarm data. Information may be processed by Google in connection with AdMob as described above.
+      Information may also be disclosed where required by applicable law.
     </p>
   </section>
 
   <section class="card">
     <h2>6. Data retention and deletion</h2>
     <p>
-      Alarm and preference data stored locally by MORNOVA remains on your device until you edit or
-      delete it, clear the App's data, or uninstall the App, subject to Android system behavior.
+      Alarm and preference data stored locally by MORNOVA remains on your device until you edit or delete
+      it, clear the App's data, or uninstall the App, subject to Android system behavior.
     </p>
     <p>
-      Because MORNOVA does not currently provide user accounts or a developer-operated cloud
-      database for alarm data, we generally do not possess a remote copy of that local data.
-      Data collected by Google is retained and deleted according to Google's applicable policies
-      and user controls.
+      Because MORNOVA does not currently provide user accounts or an ODYSSEY WORKS cloud database for
+      alarm data, ODYSSEY WORKS generally does not possess a remote copy of that local alarm data.
     </p>
     <p>
-      For questions or requests concerning information controlled directly by MORNOVA, contact
-      <a href="mailto:mornova.app@gmail.com">mornova.app@gmail.com</a>.
+      Data processed by Google is retained and deleted according to Google's applicable policies and
+      user controls.
     </p>
   </section>
 
   <section class="card">
     <h2>7. Security</h2>
     <p>
-      We use reasonable technical and organizational measures appropriate to the App's functionality.
-      Local alarm data is primarily maintained on the device. Third-party services such as Google
-      apply their own security measures to information they process.
+      MORNOVA is designed to keep core alarm and preference data primarily on the device.
+      Third-party providers such as Google apply their own technical and organizational security
+      measures to information they process. Google states that data collected by the Google Mobile Ads
+      SDK is encrypted in transit using TLS.
     </p>
   </section>
 
   <section class="card">
     <h2>8. Children</h2>
     <p>
-      MORNOVA is not specifically directed to children under 13. If our target audience, advertising
-      configuration, or legal obligations change, we will update our practices and this policy as needed.
+      MORNOVA is a general-purpose alarm app and is not specifically designed or marketed as a service
+      for children. If our target-audience configuration or applicable obligations change, we will update
+      our practices and this Policy as appropriate.
     </p>
   </section>
 
   <section class="card">
     <h2>9. International processing</h2>
     <p>
-      Google and its service providers may process information in countries other than the country
-      where you live, subject to their applicable safeguards and policies.
+      Google and its service providers may process information in countries other than the country in
+      which you live, subject to Google's applicable safeguards and policies.
     </p>
   </section>
 
   <section class="card">
-    <h2>10. Changes to this policy</h2>
+    <h2>10. Changes to this Privacy Policy</h2>
     <p>
-      We may update this Privacy Policy when the App, third-party services, or legal requirements
-      change. The latest version will be posted on this page with an updated date.
+      We may update this Privacy Policy when MORNOVA, third-party services, or legal or platform
+      requirements change. The current version will be posted on this page with an updated date.
     </p>
   </section>
 
   <section class="card">
     <h2>11. Contact</h2>
     <p>
-      Developer: Odysseyworks<br>
-      App: MORNOVA<br>
-      Privacy contact: <a href="mailto:mornova.app@gmail.com">mornova.app@gmail.com</a>
+      Developer: <strong>ODYSSEY WORKS</strong><br>
+      App: <strong>MORNOVA</strong><br>
+      Privacy contact:
+      <a href="mailto:mornova.app@gmail.com">mornova.app@gmail.com</a>
     </p>
   </section>
 
-  <hr>
+  <div class="divider"></div>
 
-  <section class="card" lang="ko">
-    <div class="brand">MORNOVA</div>
-    <h1>개인정보처리방침 요약</h1>
+  <section class="hero" id="ko" lang="ko">
+    <div class="brand">MORNOVA · ODYSSEY WORKS</div>
+    <h1>개인정보처리방침</h1>
     <p class="muted">시행일: 2026년 8월 27일 · 최종 수정일: 2026년 8월 27일</p>
     <p>
-      MORNOVA는 알람 시간, 알람 이름, 반복 요일, 미션 선택, 난이도, Snooze 설정 등
-      알람 기능에 필요한 정보를 기기 내부에 저장합니다. 현재 Android 버전은 이러한
-      알람 데이터를 개발자 서버로 업로드하기 위한 사용자 계정이나 자체 클라우드 서버를
-      운영하지 않습니다.
+      본 개인정보처리방침은 <strong>ODYSSEY WORKS</strong>가 제공하는
+      <strong>MORNOVA</strong>(이하 “앱”)를 이용할 때 정보가 어떻게 처리되는지 설명합니다.
     </p>
     <p>
-      홈 화면 광고 제공을 위해 Google Mobile Ads SDK(AdMob)를 사용합니다. Google은
-      광고·분석·부정행위 방지 목적으로 IP 주소, 앱 및 광고 상호작용 정보, 진단 정보,
-      광고 ID 등 기기 식별자를 처리할 수 있습니다. 필요한 지역에서는 Google의 동의
-      관리 도구를 통해 광고 관련 개인정보 선택권을 제공합니다.
-    </p>
-    <p>
-      앱은 알람 신뢰성을 위해 알림, 정확한 알람 예약, 전체화면 알람 표시, 포그라운드
-      서비스, 재부팅 감지, 진동 관련 Android 권한을 사용할 수 있습니다. 현재 핵심
-      알람 기능을 위해 연락처, 카메라, 마이크 또는 정밀 위치 권한을 요청하지 않습니다.
-    </p>
-    <p>
-      기기에 저장된 알람/설정 정보는 사용자가 삭제·수정하거나 앱 데이터를 삭제하거나
-      앱을 제거할 때까지 기기에 남을 수 있습니다. Google이 처리하는 데이터의 보관 및
-      삭제는 Google의 정책과 사용자 설정에 따릅니다.
-    </p>
-    <p>
-      개인정보 문의: <a href="mailto:mornova.app@gmail.com">mornova.app@gmail.com</a>
+      개인정보 문의:
+      <a href="mailto:mornova.app@gmail.com">mornova.app@gmail.com</a>
     </p>
   </section>
+
+  <section class="card" lang="ko">
+    <h2>1. MORNOVA가 기기 내부에 저장하는 정보</h2>
+    <p>
+      MORNOVA는 알람 앱입니다. 알람 시간, 알람 이름, 반복 요일, 미션 선택,
+      난이도 및 Snooze 설정 등 정상적인 앱 사용을 위해 사용자가 입력하거나 생성한
+      정보는 이용자의 기기 내부에 저장됩니다.
+    </p>
+    <p>
+      현재 MORNOVA는 사용자 계정을 요구하지 않으며, 이러한 알람 데이터를 업로드하거나
+      원격 저장하기 위한 ODYSSEY WORKS 자체 서버를 운영하지 않습니다.
+    </p>
+  </section>
+
+  <section class="card" lang="ko">
+    <h2>2. 광고 및 제3자에 의한 데이터 처리</h2>
+    <p>
+      MORNOVA는 광고 제공을 위해 <strong>Google Mobile Ads SDK(AdMob)</strong>를 사용합니다.
+      Google의 안내에 따르면 Mobile Ads SDK는 다음과 같은 데이터를 자동으로 수집하고
+      공유할 수 있습니다.
+    </p>
+    <ul>
+      <li>일반적인 위치 추정에 사용될 수 있는 IP 주소</li>
+      <li>앱 실행, 탭, 광고 상호작용 등 앱 및 광고 이용 정보</li>
+      <li>진단 및 성능 정보</li>
+      <li>해당되는 경우 Android 광고 ID, App Set ID 등의 기기 또는 계정 관련 식별자</li>
+    </ul>
+    <p>
+      Google은 이러한 데이터를 광고, 분석 및 부정행위 방지 목적으로 사용할 수 있다고
+      안내합니다. Google이 처리하는 데이터에는 Google의 개인정보처리방침 및 관련 정책이
+      적용됩니다.
+    </p>
+    <p class="small">
+      Google 개인정보처리방침:
+      <a href="https://policies.google.com/privacy" rel="noopener noreferrer">https://policies.google.com/privacy</a><br>
+      Google 광고 기술:
+      <a href="https://policies.google.com/technologies/ads" rel="noopener noreferrer">https://policies.google.com/technologies/ads</a>
+    </p>
+  </section>
+
+  <section class="card" lang="ko">
+    <h2>3. 광고 개인정보 동의 및 선택권</h2>
+    <p>
+      관련 법률 또는 플랫폼 정책에 따라 필요한 경우 MORNOVA는 Google User Messaging
+      Platform(UMP)을 이용해 광고 요청 전에 광고 관련 개인정보 선택사항을 제시하거나
+      관리합니다.
+    </p>
+    <p>
+      이용자의 지역 및 동의 상태에 따라 Google이 개인정보 옵션 진입점을 제공하는 경우,
+      MORNOVA 앱 내부에서 해당 옵션을 다시 열 수 있습니다.
+    </p>
+    <p>
+      Android의 개인정보 또는 광고 설정을 통해 Android 광고 ID를 재설정하거나 삭제할 수
+      있는 경우도 있습니다.
+    </p>
+  </section>
+
+  <section class="card" lang="ko">
+    <h2>4. 앱 권한</h2>
+    <p>MORNOVA는 안정적인 알람 기능을 위해 다음 Android 권한 또는 시스템 기능을 사용할 수 있습니다.</p>
+    <ul>
+      <li>알림 권한</li>
+      <li>정확한 알람 예약</li>
+      <li>전체화면 알람 표시</li>
+      <li>포그라운드 서비스 실행</li>
+      <li>기기 재시작 또는 부팅 완료 감지</li>
+      <li>진동</li>
+    </ul>
+    <p>
+      현재 Android 버전의 MORNOVA는 핵심 알람 기능을 위해 연락처, 카메라, 마이크 또는
+      정밀 위치 권한을 요청하지 않습니다.
+    </p>
+  </section>
+
+  <section class="card" lang="ko">
+    <h2>5. 정보의 공유 및 판매</h2>
+    <p>
+      ODYSSEY WORKS는 MORNOVA 사용자 계정 데이터베이스를 운영하지 않으며,
+      기기 내부에 저장된 알람 데이터를 판매하지 않습니다. 다만 위에서 설명한 것처럼
+      AdMob 광고 제공 과정에서 Google이 관련 데이터를 처리할 수 있습니다.
+      또한 관련 법령에 따라 필요한 경우 정보가 제공될 수 있습니다.
+    </p>
+  </section>
+
+  <section class="card" lang="ko">
+    <h2>6. 데이터 보관 및 삭제</h2>
+    <p>
+      MORNOVA가 기기 내부에 저장한 알람 및 설정 정보는 사용자가 이를 수정·삭제하거나,
+      앱 데이터를 삭제하거나, 앱을 제거할 때까지 Android 시스템 동작에 따라 기기에
+      남아 있을 수 있습니다.
+    </p>
+    <p>
+      현재 MORNOVA는 사용자 계정이나 알람 데이터를 저장하는 ODYSSEY WORKS 자체
+      클라우드 데이터베이스를 운영하지 않으므로, ODYSSEY WORKS는 일반적으로 해당 로컬
+      알람 데이터의 원격 사본을 보유하지 않습니다.
+    </p>
+    <p>
+      Google이 처리하는 데이터의 보관 및 삭제는 Google의 관련 정책과 사용자 설정에
+      따라 처리됩니다.
+    </p>
+  </section>
+
+  <section class="card" lang="ko">
+    <h2>7. 데이터 보안</h2>
+    <p>
+      MORNOVA는 핵심 알람 및 설정 데이터를 주로 기기 내부에 유지하도록 설계되어 있습니다.
+      Google 등 제3자 서비스 제공자는 자신이 처리하는 정보에 대해 각자의 기술적·관리적
+      보호조치를 적용합니다. Google은 Google Mobile Ads SDK가 수집하는 데이터가 TLS를
+      이용해 전송 중 암호화된다고 안내합니다.
+    </p>
+  </section>
+
+  <section class="card" lang="ko">
+    <h2>8. 아동</h2>
+    <p>
+      MORNOVA는 일반적인 알람 앱이며 아동을 위한 서비스로 특별히 설계되거나 마케팅되지
+      않습니다. 대상 연령 설정 또는 적용되는 의무가 변경되는 경우 관련 처리 방식과 본
+      개인정보처리방침을 필요에 따라 변경합니다.
+    </p>
+  </section>
+
+  <section class="card" lang="ko">
+    <h2>9. 국외 처리</h2>
+    <p>
+      Google 및 Google의 서비스 제공자는 이용자가 거주하는 국가 외의 국가에서 정보를
+      처리할 수 있으며, 해당 처리는 Google이 적용하는 보호조치와 정책에 따릅니다.
+    </p>
+  </section>
+
+  <section class="card" lang="ko">
+    <h2>10. 개인정보처리방침 변경</h2>
+    <p>
+      MORNOVA의 기능, 이용하는 제3자 서비스 또는 관련 법률·플랫폼 요구사항이 변경되는
+      경우 본 개인정보처리방침을 변경할 수 있습니다. 최신 버전은 수정일과 함께 이
+      페이지에 게시합니다.
+    </p>
+  </section>
+
+  <section class="card" lang="ko">
+    <h2>11. 문의</h2>
+    <p>
+      개발자/운영자: <strong>ODYSSEY WORKS</strong><br>
+      앱: <strong>MORNOVA</strong><br>
+      개인정보 문의:
+      <a href="mailto:mornova.app@gmail.com">mornova.app@gmail.com</a>
+    </p>
+  </section>
+
+  <footer>© 2026 ODYSSEY WORKS · MORNOVA</footer>
 </main>
 </body>
 </html>
